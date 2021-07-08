@@ -1,0 +1,33 @@
+<script>
+    class Person
+    {
+        #email;     // private field 
+
+        constructor(first_name, last_name, email)
+        {
+            this.first_name=first_name
+            this.last_name=last_name
+            this.#email=email
+        }
+    }
+    const p1=new Person()
+    const p2=new Person('Satyam')
+    const p3=new Person('Satyam','Singh')
+    const p4=new Person('Satyam', 'Singh','satyam@gmail.com')
+
+    console.log(p1)
+    console.log(p2)
+    console.log(p3)
+    console.log(p4)
+
+    console.log(p4.first_name)
+    console.log(p4.email)
+
+    class Employee extends Person
+    {
+        constructor(first_name, last_name)
+        {
+            super(first_name,last_name)
+        }
+    }
+</script>

@@ -1,0 +1,28 @@
+<script>
+    function sayHello(){
+        return "Hello, "
+    }
+    function welcome(){
+        return "Welcome, "
+    }
+
+    function greeting(helloFunction, name){
+        console.log(helloFunction()+name)
+    }
+
+    greeting(sayHello,"Tops")
+    greeting(welcome,"Tops")
+
+
+    function greetMessage() {
+        return function() {
+            console.log("Hello!");
+        }   
+    }
+
+    //const returnFunc = greetMessage()
+    //returnFunc()
+
+    greetMessage()()
+
+</script>

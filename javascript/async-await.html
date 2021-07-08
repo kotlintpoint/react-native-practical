@@ -1,0 +1,32 @@
+<script>
+    const add=(num1, num2)=>{
+        return new Promise((resolve, reject)=>{
+            setTimeout(()=>{
+                console.log('Timeout')
+                if(num1<0 || num2<0){
+                    // fail
+                    return reject('Negative Number Error')
+                }
+                // success
+                resolve(num1+num2)
+            },2000)
+
+        })
+     }
+    
+   const addNumbers=async ()=>{
+       try{
+            const sum1=await add(10,20)
+            const sum2=await add(sum1, 30)
+            const sum3=await add(sum2, 40)
+
+            console.log('sum1 : '+sum1)
+            console.log('sum2 : '+sum2)
+            console.log('sum3 : '+sum3)
+       }catch(err){
+           console.log(err)
+       }       
+   } 
+
+   addNumbers()
+</script>

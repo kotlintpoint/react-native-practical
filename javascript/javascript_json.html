@@ -1,0 +1,24 @@
+<script>
+
+    const person={
+        first_name : "Ankit",
+        last_name : "Sodha",
+        email : "ankit.sodha@tops-int.com"
+    }
+
+    console.log(person)
+    console.log(person.first_name)
+    console.log(person.last_name)
+    console.log(person.email)
+
+    // convert javascript object to json
+    const personJson=JSON.stringify(person)
+
+    console.log(personJson)
+
+    // convert json string to javascript object
+    const newPerson=JSON.parse(personJson)
+
+    console.log(newPerson)
+
+</script>

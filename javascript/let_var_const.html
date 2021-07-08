@@ -1,0 +1,23 @@
+<script>
+    //const SIZE=10
+
+    //  SIZE=100            error    
+
+    var value=100
+    console.log("before block "+value)  // 100
+    {
+        let value=200
+        const SIZE=10
+        console.log("inside block "+value)  // 200
+    }
+    console.log("outside block "+value)     // 100
+    //console.log("outside block size - "+SIZE)     // 100
+
+    var data
+    let dataOne
+    const dataTwo=10
+
+    console.log(data)
+    console.log(dataOne)
+    console.log(dataTwo)
+</script>
