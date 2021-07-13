@@ -3,16 +3,16 @@ import { Text, View, Button } from 'react-native'
 
 class CountClassComp extends Component {
         // initialize state 
-        state={
-            count : 10
-        }
+    state={
+        count : 10
+    }
 
-        increment=()=>{
-             // setState => to change state value 
-             this.setState({
-                 count : this.state.count+1
-             })   
-        }
+    increment=()=>{
+            // setState => to change state value 
+            this.setState({
+                count : this.state.count+1
+            })   
+    }
 
     render() {
         return (

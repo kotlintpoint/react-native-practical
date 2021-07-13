@@ -5,7 +5,7 @@ import PersonClassComp from './compos/PersonClassComp';
 import PersonFuncComp from './compos/PersonFuncComp';
 import CountFuncComp from './compos/CountFuncComp';
 import CountClassComp from './compos/CountClassComp';
-
+import TextInputHandler from './compos/TextInputHandler';
 
 export default function App() {
 
@@ -15,6 +15,8 @@ export default function App() {
 
   return (
     <View style={styles.container}>
+      <TextInputHandler></TextInputHandler>
+
       {/* {userText} */}
       <PersonFuncComp firstName="Tops" lastName="Technologies"
             otherDetails={otherDetails}></PersonFuncComp>
