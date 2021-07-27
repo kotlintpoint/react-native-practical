@@ -18,16 +18,18 @@ class CountClassScreen extends Component {
 
     componentDidMount(){
         console.log('Component Did Mount')
-        setInterval(this.myInterval, 1000)
+        this.intervalId = setInterval(this.myInterval, 1000)
+        // data fetch 
     }
 
     componentDidUpdate(){
         console.log('Component Did Update')
-      
+        // data fetch 
     }
 
     componentWillUnmount(){
         console.log('Component Will Unmount')
+        clearInterval(this.intervalId)
     }
    
     render() {
