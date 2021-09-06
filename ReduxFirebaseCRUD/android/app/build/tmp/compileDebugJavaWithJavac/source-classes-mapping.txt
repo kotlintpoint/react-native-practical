@@ -1,0 +1,14 @@
+com/sqliteproject/MainActivity.java
+ com.sqliteproject.MainActivity
+com/sqliteproject/MainApplication.java
+ com.sqliteproject.MainApplication
+ com.sqliteproject.MainApplication$1
+com/sqliteproject/ReactNativeFlipper.java
+ com.sqliteproject.ReactNativeFlipper
+ com.sqliteproject.ReactNativeFlipper$1
+ com.sqliteproject.ReactNativeFlipper$2
+ com.sqliteproject.ReactNativeFlipper$2$1
+com/sqliteproject/BuildConfig.java
+ com.sqliteproject.BuildConfig
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
